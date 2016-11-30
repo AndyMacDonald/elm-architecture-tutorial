@@ -49,7 +49,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
   div []
-    [ button [ onClick Decrement ] [ text "-" ]
+    [ button [ onClick Increment ] [ text "+" ]
     , div [] [ text (toString model) ]
-    , button [ onClick Increment ] [ text "+" ]
+    , button [ onClick Decrement ] [ text "-" ]
     ]
